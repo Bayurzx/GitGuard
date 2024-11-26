@@ -1,0 +1,6 @@
+.my_env
+.terraform*
+terraform.tfstate*
+error_notes.log
+.env
+backup
