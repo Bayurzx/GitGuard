@@ -3,7 +3,7 @@ FROM public.ecr.aws/lambda/python:3.12
 
 # Install git
 RUN microdnf update -y && \
-    microdnf install -y git && \
+    microdnf install -y git tar && \
     microdnf clean all
 
 # Copy requirements.txt
@@ -17,6 +17,7 @@ RUN pip install -r requirements.txt
 COPY lambda_function.py ${LAMBDA_TASK_ROOT}
 
 # Environment variables
+ENV HOME=/tmp
 ENV GITHUB_ORG="INFOMETICS-UBA"
 ENV S3_BUCKET="infometicsz-gh-backup"
 ENV SECRET_NAME="github-backup-credentials"
