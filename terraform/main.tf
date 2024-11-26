@@ -20,6 +20,7 @@ resource "aws_lambda_function" "github_backup" {
 
   environment {
     variables = {
+      HOME        = var.home_tmp_dir
       SECRET_NAME = aws_secretsmanager_secret.github_credentials.name
       GITHUB_ORG  = var.lambda_github_org
       S3_BUCKET   = aws_s3_bucket.backup_bucket.id
