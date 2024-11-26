@@ -27,6 +27,10 @@ resource "aws_lambda_function" "github_backup" {
     }
   }
 
+  ephemeral_storage {
+    size = 10240 # Min 512 MB and the Max 10240 MB
+  }
+
   tags = var.common_tags
 }
 
