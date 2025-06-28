@@ -7,3 +7,4 @@ backup
 terraform.tfvars
 terraform/plan_output.txt
 backup.log
+*_x.*

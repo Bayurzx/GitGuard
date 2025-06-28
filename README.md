@@ -6,6 +6,9 @@ An automated backup solution for GitHub organizations using AWS Lambda, S3, and 
 
 The system uses a containerized AWS Lambda function to orchestrate backups, storing data in S3 with intelligent lifecycle management. See [Architecture Documentation](./ARCHITECTURE.md) for detailed technical specifications.
 
+## Architecture Diagram
+![Architecture Diagram](./Architecture%20Diagram.png)
+
 ## ✨ Features
 
 - **Complete Repository Backup**: Full git mirrors with all branches and history

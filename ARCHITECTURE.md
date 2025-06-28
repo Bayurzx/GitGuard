@@ -4,6 +4,8 @@
 
 This system provides automated backup of GitHub organization repositories to AWS S3 using a containerized Lambda function. The solution runs on a weekly schedule and backs up repository code, metadata, and wikis.
 
+## Architecture Diagram
+![Architecture Diagram](./Architecture%20Diagram.png)
 
 ## Architecture Components
 
@@ -126,7 +128,7 @@ S3 Bucket: {bucket-name}/
 - Custom container updates for dependencies
 - Terraform state management for infrastructure changes
 
-## Architecture Diagram
+## Architecture Diagram (Mermaid)
 ```mermaid
 graph TB
     %% External Services
