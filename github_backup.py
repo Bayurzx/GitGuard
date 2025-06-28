@@ -39,13 +39,9 @@ else:
 
 
 # TODO: Complete Configuration
-# OWNER = 'Iglumtechnologies'  # TODO: Organization or GitHub account name to change
-# BACKUP_DIR = './backup'
-# S3_BUCKET_NAME = 'infometicsz-gh-backup' # TODO: change
-
-OWNER = 'INFOMETICS-UBA'  # TODO: Organization or GitHub account name to change
+OWNER = 'Iglumtechnologies'  # TODO: Organization or GitHub account name to change
 BACKUP_DIR = './backup'
-S3_BUCKET_NAME = 'infometicsz-gh-backup' # TODO: change
+S3_BUCKET_NAME = 'iglumtech-gh-backup' # TODO: change
 
 
 # AWS S3 Client setup using default directly

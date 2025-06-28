@@ -18,8 +18,8 @@ COPY lambda_function.py ${LAMBDA_TASK_ROOT}
 
 # Environment variables
 ENV HOME=/tmp
-ENV GITHUB_ORG="INFOMETICS-UBA"
-ENV S3_BUCKET="infometicsz-gh-backup"
+ENV GITHUB_ORG="Iglumtechnologies"
+ENV S3_BUCKET="iglumtech-gh-backup"
 ENV SECRET_NAME="github-backup-credentials"
 
 # Command to run the Lambda handler
